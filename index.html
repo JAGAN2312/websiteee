@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>VIT AP Previous Year Papers</title> <link rel="stylesheet" href="style.css">
+    <style>
+        /* Overall page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Set background color to black */
+            color: #fff; /* Set text color to white */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #1a1a1a; /* Darker shade for header */
+            border-bottom: 1px solid #333; /* Slightly lighter border */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+.vit-ap {
+    color: orange;
+}
+
+.previous-year{
+    color: white;
+}
+
+
+.previous-year .middle-v {
+    color: blue;
+}
+
+.question-papers {
+    color: green;
+}
+
+
+        nav a {
+            text-decoration: none;
+            color: #fff; /* White text for navigation links */
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        /* Search form styling */
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #444; /* Dark border */
+            background-color: #333; /* Dark background for input */
+            color: #fff; /* White text color */
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #007bff; /* Bright blue button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Media Queries for responsive design */
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-menu {
+        margin-left: 0;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .subject-block {
+        width: calc(100% - 40px); /* Adjusted to fit within margins */
+        max-width: none; /* Remove max-width constraint */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hamburger-menu-icon {
+        font-size: 24px;
+    }
+
+    .subject-block {
+        width: 100%;
+        margin: 10px 0; /* Reduced margin */
+    }
+}
+
+
+
+        .search-container button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Style for the hamburger menu */
+        .hamburger-menu {
+            position: relative;
+            display: inline-block;
+            margin-left: 160px; /* Spacing between the title and menu icon */
+            vertical-align: middle; /* Align vertically with the title */
+        }
+
+        .hamburger-menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            color: #fff; /* White icon */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        /* Dropdown menu styling */
+        .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    right: 0; /* Ensures the menu aligns to the right */
+    opacity: 0;
+    transform: translateY(-10px); /* Changed to translateY for vertical dropdown */
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Dropdown animation */
+}
+
+
+        .dropdown-content.show {
+            display: block;
+            opacity: 1;
+            transform: translateX(0%);
+        }
+
+        .dropdown-content a {
+            color: #fff; /* White text for links */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444; /* Slightly lighter background on hover */
+        }
+
+        /* Subject block styles */
+        .subject-block {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .subject-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #fff; /* White border around images */
+        }
+
+        .subject-block h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff; /* White text for subject titles */
+        }
+        * Custom background colors for each option */
+        .dropdown-content a {
+            color: #fff; /* White text for links */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444; /* Default background on hover */
+        }
+
+        .dropdown-content a:nth-child(1):hover {
+            background-color: #FFA500; /* Tomato */
+        }
+
+        .dropdown-content a:nth-child(2):hover {
+            background-color: #FFFF; /* Orange */
+        }
+
+        .dropdown-content a:nth-child(3):hover {
+            background-color: #32cd32; /* LimeGreen */
+        }
+
+        .dropdown-content a:nth-child(4):hover {
+            background-color: #FFA500; /* DodgerBlue */
+        }
+        
+        .dropdown-content a:nth-child(5):hover {
+            background-color: #32cd31; /* DodgerBlue */
+        }
+        .dropdown-content a:nth-child(6):hover {
+            background-color: #0000ff; /* DodgerBlue */
+        }
+        
+
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a; /* Darker shade for footer */
+            border-top: 1px solid #333; /* Slightly lighter border */
+            margin-top: 40px;
+        }
+
+        footer .subject-blocks {
+            display: inline-block;
+            width: 100px;
+            margin: 10px;
+        }
+
+        footer .subject-blocks img {
+            width: 50px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #fff; /* White border around images */
+        }
+
+        footer .subject-blocks h3 {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #fff; /* White text for social media links */
+        }
+    </style>
+</head>
+<body>
+    <div id="egg-container"> <div id="egg"> <div id="egg-top"></div> <div id="egg-bottom"></div> </div> <div id="message"></div> </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- 3D container --> <div id="3d-container"></div> <script src="script.js"></script>
+    
+    <header>
+        <div>
+            <h1>
+                <span class="vit-ap">VIT AP</span> 
+                <p class="previous-year">pre<span class="middle-v">v</span>ious<year></year></p>
+
+                <span class="question-papers">Question Papers</span>
+            </h1>
+        </div>
+        <div class="hamburger-menu">
+            <span class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</span>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="https://www.instagram.com/unprofessional.vit_memer/">MEMES</a>
+                <a href="https://www.shopify.com/blog/motivational-quotes">TEMPORARY MOTIVATION</a>
+                <a href="https://cgpa-calculator.rajchandra.me/">CGPA CALCULATOR</a>
+                <a href="https://faculty-ranker.vercel.app/showFaculty">FACULTY RANK</a>
+                
+                
+                <a href="https://vitap-time-table-scheduler.vercel.app/">TIME TABLE SCHEDULER</a>
+            
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search subjects...">
+            <button onclick="searchSubject()">Search</button>
+        </div>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="subject-block">
+            <a href="cse1022.html">
+                <img src=".\assets\images\cse1022.jpg" alt="CSE1022">
+                <h2>CSE1022</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="mgt1040.html">
+                <img src=".\assets\images\MGT.jpg" alt="MGT1040">
+                <h2>MGT1040</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse3002.html">
+                <img src=".\assets\images\CSE3002.jpeg" alt="CSE3002">
+                <h2>CSE3002</h2>
+            </a>
+        </div>
+        
+        <div class="subject-block">
+            <a href="mat1003.html">
+                <img src=".\assets\images\DMS.jpg" alt="MAT1003">
+                <h2>MAT1003</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse2001.html">
+                <img src=".\assets\images\DSA.jpg" alt="CSE2001">
+                <h2>CSE2001</h2>
+            </a>
+        </div>
+        
+        <div class="subject-block">
+            <a href="cse1006.html">
+                <img src=".\assets\images\DATAAN.webp" alt="CSE1006">
+                <h2>CSE1006</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse1007.html">
+                <img src=".\assets\images\cse1007.jpg" alt="CSE1007">
+                <h2>CSE1007</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse3004.html">
+                <img src=".\assets\images\da.jpg" alt="CSE3004">
+                <h2>CSE3004</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse4001.html">
+                <img src=".\assets\images\cse4001.jpg" alt="CSE4001">
+                <h2>CSE4001</h2>
+            </a>
+        </div>
+        
+        <div class="subject-block">
+            <a href="cse1021.html">
+                <img src=".\assets\images\CSE1021.avif" alt="CSE1021">
+                <h2>CSE1021</h2>
+            </a>
+        </div>
+        
+        <div class="subject-block">
+            <a href="cse3008.html">
+                <img src=".\assets\images\cse3008.jpg" alt="CSE3008">
+                <h2>CSE3008</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="frl1001.html">
+                <img src=".\assets\images\france-flag-brush-logo-template_8163-124.avif" alt="FRL1001">
+                <h2>FRL1001</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="ECE2005.html">
+                <img src=".\assets\images\signal-System.jpg" alt="ECE2005">
+                <h2>ECE2005</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1W5n_FJgd2S91ZJfZ72IYOmfNfFD32kQp">
+                <img src=".\assets\images\MATHSC.webp" alt="MAT1001">
+                <h2>MAT1001</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/15nlktKIENvzKN-RaNMB_gC4fl1bGtOxX">
+                <img src=".\assets\images\MATHSC.webp" alt="MAT1002">
+                <h2>MAT1002</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1q_euP2BIoW7e1glult6-AU9brUgq7xCu">
+                <img src=".\assets\images\images (2).png" alt="cse1012">
+                <h2>cse1012</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1Z07UmivwAUMhVNbJjgflgBnPIxLCi3Az">
+                <img src=".\assets\images\JAVA.png" alt="cse2005">
+                <h2>cse2005</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1ykHwz_uLsGqo36G_HK1BwlBoiBmex4dg">
+                <img src=".\assets\images\images (1).png" alt="chy1009">
+                <h2>chy1009</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1MgVGJKns-uESk9GwBnoW64j24PWX8163">
+                <img src=".\assets\images\360_F_282195356_Qnba54RyXAWkuEU2BYgIrBNTWIO3pzL5.jpg" alt="phy1008">
+                <h2>phy1008</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/18dt056s1MRYaB6GQa8kA0NpHfmCSiAdp">
+                <img src=".\assets\images\images (3).png" alt="ECE1002">
+                <h2>ECE1002</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1L3DrnlK2K1sZ_phdsFXGXuUCx4anluqW">
+                <img src=".\assets\images\images (1).jpeg" alt="ENG1001">
+                <h2>ENG1001</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="https://drive.google.com/drive/folders/1xXFyJLNSk6FHDIr_N84udZeLpqOPkMem">
+                <img src=".\assets\images\images (1).jpeg" alt="ENG1002">
+                <h2>ENG1002</h2>
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; JAGAN 23BCE7103. All rights reserved.</p>
+        <div class="subject-blocks">
+            <a href="https://www.instagram.com/nameisnani/?hl=en">
+                <img src=".\assets\images\instagram.webp" alt="instagram">
+                <h3>Instagram</h3>
+            </a>
+        </div>
+        <div class="subject-blocks">
+            <a href="https://www.linkedin.com/in/jagan-m-b2792224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src=".\assets\images\LinkedIn.png" alt="linkedin">
+                <h3>linkedin</h3>
+            </a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('show');
+        }
+
+        function searchSubject() {
+            var input = document.getElementById('searchInput').value.toUpperCase();
+            var subjects = [
+                { name: 'MAT1003', url: 'mat1003.html' },
+                { name: 'CSE2001', url: 'cse2001.html' },
+                { name: 'MGT1040', url: 'mgt1040.html' },
+                { name: 'CSE1021', url: 'cse1021.html' },
+                { name: 'CSE1022', url: 'cse1022.html' },
+                { name: 'CSE3002', url: 'cse3002.html' },
+                { name: 'CSE4001', url: 'cse4001.html' },
+                { name: 'CSE3004', url: 'cse3004.html' },
+                { name: 'CSE1007', url: 'cse1007.html' },
+                { name: 'ECE2005', url: 'ECE2005.HTML' },
+                { name: 'cse1006', url: 'cse1006.HTML' },
+                { name: 'MAT1001', url: 'https://drive.google.com/drive/folders/1W5n_FJgd2S91ZJfZ72IYOmfNfFD32kQp' },
+                { name: 'MAT1002', url: 'https://drive.google.com/drive/folders/15nlktKIENvzKN-RaNMB_gC4fl1bGtOxX' },
+                { name: 'CSE1012', url: 'https://drive.google.com/drive/folders/1q_euP2BIoW7e1glult6-AU9brUgq7xCu' },
+                { name: 'CSE2005', url: 'https://drive.google.com/drive/folders/1Z07UmivwAUMhVNbJjgflgBnPIxLCi3Az' },
+                { name: 'CHY1009', url: 'https://drive.google.com/drive/folders/1ykHwz_uLsGqo36G_HK1BwlBoiBmex4dg' },
+                { name: 'PHY1008', url: 'https://drive.google.com/drive/folders/1MgVGJKns-uESk9GwBnoW64j24PWX8163' },
+                { name: 'ECE1002', url: 'https://drive.google.com/drive/folders/18dt056s1MRYaB6GQa8kA0NpHfmCSiAdp' },
+                { name: 'ENG1001', url: 'https://drive.google.com/drive/folders/1L3DrnlK2K1sZ_phdsFXGXuUCx4anluqW' },
+                { name: 'ENG1002', url: 'https://drive.google.com/drive/folders/1xXFyJLNSk6FHDIr_N84udZeLpqOPkMem' },
+
+                
+
+            
+            ];
+
+            for (var i = 0; i < subjects.length; i++) {
+                if (subjects[i].name === input) {
+                    window.location.href = subjects[i].url;
+                    return;
+                }
+            }
+
+            alert('Subject not found');
+        }
+    </script>
+
+</body>
+</html>
+

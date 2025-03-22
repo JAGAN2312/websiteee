@@ -278,12 +278,28 @@
             font-size: 16px;
             color: #fff; /* White text for social media links */
         }
+        @keyframes moveText {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        .moving-text {
+            white-space: nowrap;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            animation: moveText 5s linear infinite;
+        }
     </style>
 </head>
 <body>
     <div id="egg-container"> <div id="egg"> <div id="egg-top"></div> <div id="egg-bottom"></div> </div> <div id="message"></div> </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- 3D container --> <div id="3d-container"></div> <script src="script.js"></script>
-    
+    <marquee behavior="scroll" direction="left" style="color: blue; font-size: 24px; font-weight: bold;">
+        😊All the best for your CAT-2 exams!🙂
+    </marquee>
+
     <header>
         <div>
             <h1>
@@ -316,16 +332,93 @@
     </header>
 
     <main>
+        
         <div class="subject-block">
-            <a href="cse1022.html">
-                <img src=".\assets\images\cse1022.jpg" alt="CSE1022">
-                <h2>CSE1022</h2>
+            <a href="cse2007.html">
+                <img src=".\assets\images\76b8b29651deb6ff1fb6047f59fb1e52.png" alt="CSE2007">
+                <h2>CSE2007</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse2009.html">
+                <img src=".\assets\images\1679975013425.jpeg" alt="CSE2009">
+                <h2>CSE2009</h2>
+            </a>
+        </div>
+        
+        <div class="subject-block">
+            <a href="ece2002.html">
+                <img src=".\assets\images\word-cloud-computer-architecture-GJ6XJT.jpg" alt="ece2002">
+                <h2>ece2002</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse1005.html">
+                <img src=".\assets\images\compressed_00af52e3eff1659d1ef65fa74caf598e.webp" alt="CSE1005">
+                <h2>CSE1005</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="frl1001.html">
+                <img src=".\assets\images\france-flag-brush-logo-template_8163-124.avif" alt="FRL1001">
+                <h2>FRL1001</h2>
+            </a>
+        </div>
+        
+        
+        <div class="subject-block">
+            <a href="mat1011.html">
+                <img src=".\assets\images\images (2).jpeg" alt="mat1011">
+                <h2>mat1011</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse3008.html">
+                <img src=".\assets\images\cse3008.jpg" alt="CSE3008">
+                <h2>CSE3008</h2>
             </a>
         </div>
         <div class="subject-block">
             <a href="mgt1040.html">
                 <img src=".\assets\images\MGT.jpg" alt="MGT1040">
                 <h2>MGT1040</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="ECE1010.HTML">
+                <img src=".\assets\images\prob.png" alt="ECE1010">
+                <h2>ECE1010</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="ECE2001.html">
+                <img src=".\assets\images\images (1).png" alt="ECE2001">
+                <h2>ECE2001</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="ECE2014.html">
+                <img src=".\assets\images\image.png"" alt="ECE2014">
+                <h2>ECE2014</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse3006.html">
+                <img src=".\assets\images\data-visualization-icon-simple-element-illustration-data-visualization-concept-symbol-design-from-analytics-research-collection-can-be-used-web-mobile_159242-12210.avif" alt="CSE3006">
+                <h2>CSE3006</h2>
+            </a>
+        </div>
+        <div class="subject-block">
+            <a href="cse1022.html">
+                <img src=".\assets\images\cse1022.jpg" alt="CSE1022">
+                <h2>CSE1022</h2>
+            </a>
+        </div>
+        
+        <div class="subject-block">
+            <a href="cse2001.html">
+                <img src=".\assets\images\DSA.jpg" alt="CSE2001">
+                <h2>CSE2001</h2>
             </a>
         </div>
         <div class="subject-block">
@@ -341,12 +434,7 @@
                 <h2>MAT1003</h2>
             </a>
         </div>
-        <div class="subject-block">
-            <a href="cse2001.html">
-                <img src=".\assets\images\DSA.jpg" alt="CSE2001">
-                <h2>CSE2001</h2>
-            </a>
-        </div>
+        
         
         <div class="subject-block">
             <a href="cse1006.html">
@@ -380,18 +468,8 @@
             </a>
         </div>
         
-        <div class="subject-block">
-            <a href="cse3008.html">
-                <img src=".\assets\images\cse3008.jpg" alt="CSE3008">
-                <h2>CSE3008</h2>
-            </a>
-        </div>
-        <div class="subject-block">
-            <a href="frl1001.html">
-                <img src=".\assets\images\france-flag-brush-logo-template_8163-124.avif" alt="FRL1001">
-                <h2>FRL1001</h2>
-            </a>
-        </div>
+        
+        
         <div class="subject-block">
             <a href="ECE2005.html">
                 <img src=".\assets\images\signal-System.jpg" alt="ECE2005">
@@ -499,6 +577,16 @@
                 { name: 'ECE1002', url: 'https://drive.google.com/drive/folders/18dt056s1MRYaB6GQa8kA0NpHfmCSiAdp' },
                 { name: 'ENG1001', url: 'https://drive.google.com/drive/folders/1L3DrnlK2K1sZ_phdsFXGXuUCx4anluqW' },
                 { name: 'ENG1002', url: 'https://drive.google.com/drive/folders/1xXFyJLNSk6FHDIr_N84udZeLpqOPkMem' },
+                { name: 'CSE2007', url: 'CSE2007.html' },
+                { name: 'CSE2009', url: 'cse2009.html' },
+                { name: 'ECE2002', url: 'ECE2002.html' },
+                { name: 'CSE1005', url: 'cse1005.html' },
+                { name: 'FRL1001', url: 'FRL1001.html' },
+                { name: 'MAT1011', url: 'MAT1001.html' },
+                { name: 'CSE3008', url: 'CSEE3008.html' },
+                { name: 'ECE1010', url: 'ECE1010.html' },
+                { name: 'ECE2001', url: 'ECE2001.html' },
+                { name: 'ECE2014', url: 'ECE2014.html' },
 
                 
 
